@@ -41,7 +41,7 @@ void presentarMenu() {
  */
 void pedirOrden(int& operacion) {
     presentarMenu();
-    cout << "Seleccione una operacion [0-" << NUM_OPERACIONES << "]: ";
+    cout << "Seleccione una operación [0-" << NUM_OPERACIONES << "]: ";
     cin >> operacion;    
 }
 
