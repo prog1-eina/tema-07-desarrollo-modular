@@ -1,0 +1,47 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Compilar proyecto «calculadora» de golpe",
+            "command": "g++",
+            "args": [
+                "-g",
+                "calculadora-main.cpp",
+                "calculos.cpp",
+                "-o",
+                "calculadora"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+        },
+        {
+            "type": "shell",
+            "label": "Compilar proyecto «calculadora»",
+            "command": "mingw32-make",
+            "problemMatcher": [
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        },
+        {
+            "type": "shell",
+            "label": "Ejecutar proyecto «calculadora»",
+            "command": "./calculadora",
+            "dependsOn": "Compilar proyecto «calculadora»",
+            "windows": {
+                "command": "chcp 65001 ; ./calculadora",
+            },
+            "problemMatcher": [],
+        },
+    ],
+    "presentation": {
+        "showReuseMessage": false,
+        "panel": "shared",
+        "reveal": "always",
+        "focus": true,
+    },
+    "version": "2.0.0"
+}
