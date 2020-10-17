@@ -8,7 +8,7 @@
             "name": "Depurar proyecto «calculadora»",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/calculadora",
+            "program": "${workspaceFolder}/bin/calculadora",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

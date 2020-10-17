@@ -2,21 +2,6 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "Compilar proyecto «calculadora» de golpe",
-            "command": "g++",
-            "args": [
-                "-g",
-                "calculadora-main.cpp",
-                "calculos.cpp",
-                "-o",
-                "calculadora"
-            ],
-            "problemMatcher": [
-                "$gcc"
-            ],
-        },
-        {
-            "type": "shell",
             "label": "Compilar proyecto «calculadora»",
             "command": "mingw32-make",
             "problemMatcher": [
@@ -29,11 +14,11 @@
         {
             "type": "shell",
             "label": "Ejecutar proyecto «calculadora»",
-            "command": "./calculadora",
-            "dependsOn": "Compilar proyecto «calculadora»",
+            "command": "bin/calculadora",
             "windows": {
-                "command": "chcp 65001 ; ./calculadora",
+                "command": "chcp 65001 ; bin/calculadora",
             },
+            "dependsOn": "Compilar proyecto «calculadora»",
             "problemMatcher": [],
         },
     ],
