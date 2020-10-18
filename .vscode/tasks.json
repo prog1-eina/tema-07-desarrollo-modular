@@ -4,12 +4,11 @@
             "type": "shell",
             "label": "Compilar proyecto «calculadora»",
             "command": "mingw32-make",
-            "problemMatcher": [
-            ],
+            "problemMatcher": [],
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
+            }
         },
         {
             "type": "shell",
