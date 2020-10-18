@@ -3,7 +3,10 @@
         {
             "type": "shell",
             "label": "Compilar proyecto «calculadora»",
-            "command": "mingw32-make",
+            "command": "make",
+            "windows": {
+                "command": "mingw32-make",
+            },
             "problemMatcher": [],
             "group": {
                 "kind": "build",
