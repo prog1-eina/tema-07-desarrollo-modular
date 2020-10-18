@@ -14,9 +14,9 @@
         {
             "type": "shell",
             "label": "Ejecutar proyecto «calculadora»",
-            "command": "bin/calculadora",
+            "command": "${workspaceFolder}/calculadora",
             "windows": {
-                "command": "chcp 65001 ; bin/calculadora",
+                "command": "chcp 65001 ; ${workspaceFolder}/calculadora",
             },
             "dependsOn": "Compilar proyecto «calculadora»",
             "problemMatcher": [],
