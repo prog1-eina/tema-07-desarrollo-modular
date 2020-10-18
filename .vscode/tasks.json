@@ -7,7 +7,7 @@
             "windows": {
                 "command": "mingw32-make",
             },
-            "problemMatcher": [],
+            "problemMatcher": ["$gcc"],
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -16,9 +16,9 @@
         {
             "type": "shell",
             "label": "Ejecutar proyecto «calculadora»",
-            "command": "${workspaceFolder}/calculadora",
+            "command": "./calculadora",
             "windows": {
-                "command": "chcp 65001 ; ${workspaceFolder}/calculadora",
+                "command": "chcp 65001 ; .\\calculadora.exe",
             },
             "dependsOn": "Compilar proyecto «calculadora»",
             "problemMatcher": [],
