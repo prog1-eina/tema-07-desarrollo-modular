@@ -1,8 +1,8 @@
 ﻿/*************************************************************************
  * Curso de Programación 1. Tema 7 y práctica 3
  * Autores: Miguel Ángel Latre y Javier Martínez
- * Última revisión: 17 de octubre de 2018
- * Resumen: Fichero calculos.h de implementación del módulo de biblioteca
+ * Última revisión: 18 de octubre de 2020
+ * Resumen: Fichero calculos.cpp de implementación del módulo de biblioteca
  *          «calculos» que facilita algunas funciones para trabajar con
  *          datos de tipo entero
  ************************************************************************/
@@ -12,13 +12,13 @@
  * Post: Ha devuelto el número de cifras de «n» cuando este se escribe en
  *       base 10.
  */
-int numCifras(int n) {
-    int cuenta = 1;         // lleva la cuenta de las cifras identificadas
-    n = n / 10;             // elimina la cifra menos significativa de «n»
+unsigned int numCifras(int n) {
+    unsigned int cuenta = 1;      // lleva la cuenta de las cifras identificadas
+    n = n / 10;                   // elimina la cifra menos significativa de «n»
     while (n != 0) {
         // El valor de <cuenta> es igual al de cifras identificadas en «n»
         cuenta++;       // contabiliza la cifra menos significativa de «n»
-        n = n / 10;     // y la elimina de «n».
+        n = n / 10;     // y la elimina de «n».   
     }
     return cuenta;
 }
@@ -29,14 +29,14 @@ int numCifras(int n) {
  * Post: Ha devuelto la suma de las cifras de «n» cuando «n» se escribe en
  *       base 10.
  */
-int sumaCifras(int n) {
+unsigned int sumaCifras(int n) {
     if (n < 0) {
-        n = -n;                 // si «n» es negativo, le cambia el signo
+        n = -n;                    // si «n» es negativo, le cambia el signo
     }
-    int suma = 0;               // suma de las cifras eliminadas de «n»
+    unsigned int suma = 0;         // suma de las cifras eliminadas de «n»
     while (n != 0) {
-        suma = suma + n % 10;   // suma la cifra menos significativa de «n»
-        n = n / 10;             // y la elimina de «n»
+        suma = suma + n % 10;      // suma la cifra menos significativa de «n»
+        n = n / 10;                // y la elimina de «n»
     }
     return suma;
 }
@@ -47,7 +47,7 @@ int sumaCifras(int n) {
  *  Post: Ha devuelto la «i»-ésima cifra menos significativa de «n» cuando
  *        «n» se escribe en base 10.
  */
-int cifra(int n, int i) {
+unsigned int cifra(int n, unsigned int i) {
     if (n < 0) {
         n = -n;             // si «n» es negativo, le cambia el signo
     }
@@ -92,10 +92,10 @@ int imagen(int n) {
 
 
 /*
- *  Pre:  n ≥ 0
+ *  Pre:  ---
  *  Post: Ha devuelto el factorial de «n».
  */
-int factorial(int n) {
+unsigned int factorial(unsigned int n) {
     int factorial = 1;      //  factorial = 0!
     for (int i = 2; i <= n; i++) {
         //  factorial = (i - 1)!
@@ -111,7 +111,7 @@ int factorial(int n) {
  *  Pre:  ---
  *  Post: Ha devuelto true si y solo si «n» es un número primo.
  */
-bool esPrimo (int n) {
+bool esPrimo(unsigned int n) {
     if (n == 2) {
         return true;      // «n» es igual a 2, luego es primo.
     }
@@ -122,7 +122,7 @@ bool esPrimo (int n) {
         // Se buscan posibles divisores impares de «n» a partir del 3:
 
         // «divisor» indica el siguiente impar candidato a dividir a «n».
-        int divisor = 3;              // Primer divisor impar a probar
+        unsigned int divisor = 3;              // Primer divisor impar a probar
 
         // «encontrado» indica si se ha encontrado un divisor de «n».
         bool encontrado = false;
@@ -137,10 +137,10 @@ bool esPrimo (int n) {
 
 
 /*
- *  Pre: a != 0 o b != 0
- *  Post: Ha devuelto el máximo común divisor de <a> y <b>.
+ *  Pre: a ≠ 0 o b ≠ 0
+ *  Post: Ha devuelto el máximo común divisor de «a» y «b».
  */
-int mcd (int a, int b) {
+unsigned int mcd(int a, int b) {
     // Algoritmo de Euclides para el cálculo del mcd
     if (a < 0) {
         a = -a;
