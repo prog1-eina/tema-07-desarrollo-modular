@@ -1,14 +1,14 @@
 ﻿/********************************************************************************\
  * Curso de Programación 1. Tema 7 y práctica 3
  * Autores: Miguel Ángel Latre y Javier Martínez
- * Última revisión: 18 de octubre de 2019
+ * Última revisión: 17 de octubre de 2020
  * Resumen: Módulo principal de un programa interactivo dirigido por menú
  *          que permite al usuario la realización de algunos cálculos con
  *          datos de tipo entero
 \********************************************************************************/
 
 #include <iostream>
-#include "calculos.h"
+#include "calculos.hpp"
 using namespace std;
 
 /*
