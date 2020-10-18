@@ -6,6 +6,7 @@
  *          «calculos» que facilita algunas funciones para trabajar con
  *          datos de tipo entero
  ************************************************************************/
+#include "calculos.hpp"
 
 /*
  * Pre:  ---
