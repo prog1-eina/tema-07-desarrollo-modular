@@ -97,8 +97,8 @@ int imagen(int n) {
  *  Post: Ha devuelto el factorial de «n».
  */
 unsigned int factorial(unsigned int n) {
-    int factorial = 1;      //  factorial = 0!
-    for (int i = 2; i <= n; i++) {
+    unsigned int factorial = 1;      //  factorial = 0!
+    for (unsigned int i = 2; i <= n; i++) {
         //  factorial = (i - 1)!
         factorial = i * factorial;
         // factorial = i!
