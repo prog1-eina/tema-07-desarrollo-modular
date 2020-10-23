@@ -5,9 +5,11 @@
             "label": "Compilar proyecto «calculadora»",
             "command": "make",
             "windows": {
-                "command": "mingw32-make",
+                "command": "mingw32-make"
             },
-            "problemMatcher": ["$gcc"],
+            "problemMatcher": [
+                "$gcc"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -18,10 +20,10 @@
             "label": "Ejecutar proyecto «calculadora»",
             "command": "./calculadora",
             "windows": {
-                "command": "chcp 65001 ; .\\calculadora.exe",
+                "command": "chcp 65001 ; .\\calculadora.exe"
             },
             "dependsOn": "Compilar proyecto «calculadora»",
-            "problemMatcher": [],
+            "problemMatcher": []
         },
     ],
     "presentation": {
