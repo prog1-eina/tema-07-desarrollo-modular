@@ -10,4 +10,4 @@ Configurado con tres tareas para su utilización en Visual Studio Code:
 
  **3. Depurar proyecto «calculadora».** Inicia la depuración del programa «calculadora». Si es necesario, se compila previamente el proyecto, utilizando la primera tarea.
 
-El fichero [Makefile de este repositorio](https://github.com/prog1-eina/tema-07-desarrollo-modular/blob/master/makefile) utiliza la forma más simple de las reglas de make y no usa variables make. El [código fuente de partida de la práctica 3](https://github.com/prog1-eina/practica3) utiliza ficheros makefile más profesionales.
+El fichero [Makefile de este repositorio](https://github.com/prog1-eina/tema-07-desarrollo-modular/blob/master/Makefile) utiliza la forma más simple de las reglas de make y no usa variables make. El [código fuente de partida de la práctica 3](https://github.com/prog1-eina/practica3) utiliza ficheros makefile más profesionales.
