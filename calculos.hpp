@@ -1,7 +1,7 @@
 ﻿/*******************************************************************************
  * Curso de Programación 1. Tema 7 y práctica 3
  * Autores: Miguel Ángel Latre y Javier Martínez
- * Última revisión: 18 de octubre de 2020
+ * Última revisión: 15-10-2021
  * Resumen: Fichero calculos.hpp de interfaz del módulo de biblioteca
  *          «calculos» que facilita algunas funciones para trabajar con
  *          datos de tipo entero
@@ -12,7 +12,7 @@
  * Post: Ha devuelto el número de cifras de «n» cuando «n» se escribe en
  *       base 10.
  */
-unsigned int numCifras(int n);
+unsigned numCifras(int n);
 
 
 /*
@@ -20,7 +20,7 @@ unsigned int numCifras(int n);
  * Post: Ha devuelto la suma de las cifras de «n» cuando «n» se escribe en
  *       base 10.
  */
-unsigned int sumaCifras(int n);
+unsigned sumaCifras(int n);
 
 
 /*
@@ -28,7 +28,7 @@ unsigned int sumaCifras(int n);
  *  Post: Ha devuelto la «i»-ésima cifra menos significativa de «n» cuando
  *        «n» se escribe en base 10.
  */
-unsigned int cifra(int n, unsigned int i);
+unsigned cifra(int n, unsigned i);
 
 
 /*
@@ -43,18 +43,18 @@ int imagen(int n);
  *  Pre:  ---
  *  Post: Ha devuelto el factorial de «n».
  */
-unsigned int factorial(unsigned int n);
+unsigned factorial(unsigned n);
 
 
 /*
  *  Pre:  ---
  *  Post: Ha devuelto true si y solo si «n» es un número primo.
  */
-bool esPrimo(unsigned int n);
+bool esPrimo(unsigned n);
 
 
 /*
  *  Pre: a ≠ 0 o b ≠ 0
  *  Post: Ha devuelto el máximo común divisor de «a» y «b».
  */
-unsigned int mcd(int a, int b);
+unsigned mcd(int a, int b);
