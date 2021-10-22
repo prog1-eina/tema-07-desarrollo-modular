@@ -1,7 +1,5 @@
 # Tema 7. Desarrollo modular
 
-Código del tema 7 (diseño modular) de la asignatura Programación 1. Escuela de Ingeniería y Arquitectura de la Universidad de Zaragoza
-
 Código del tema 7 (diseño modular) de la asignatura [Programación 1](https://github.com/prog1-eina) ([Grado en Ingeniería Informática](https://webdiis.unizar.es/~silarri/coordinadorGrado/), [Escuela de Ingeniería y Arquitectura](https://eina.unizar.es/), [Universidad de Zaragoza](https://www.unizar.es/)).
 
 El programa ``calculadora`` puede compilarse y ejecutarse desde una terminal de las siguientes formas:
