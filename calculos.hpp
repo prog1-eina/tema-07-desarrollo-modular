@@ -1,11 +1,11 @@
-﻿/*******************************************************************************
+﻿/******************************************************************************\
  * Curso de Programación 1. Tema 7 y práctica 3
  * Autores: Miguel Ángel Latre y Javier Martínez
  * Última revisión: 15-10-2021
  * Resumen: Fichero calculos.hpp de interfaz del módulo de biblioteca
  *          «calculos» que facilita algunas funciones para trabajar con
  *          datos de tipo entero
- ******************************************************************************/
+\******************************************************************************/
 
 /*
  * Pre:  ---
