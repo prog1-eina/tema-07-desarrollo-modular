@@ -10,9 +10,6 @@
             "type": "shell",
             "label": "Compilar proyecto «calculadora»",
             "command": "make",
-            "windows": {
-                "command": "mingw32-make"
-            },
             "problemMatcher": [
                 "$gcc"
             ],
