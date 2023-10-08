@@ -11,13 +11,13 @@ El programa ``calculadora`` puede compilarse y ejecutarse desde una terminal de 
 
 2. En Windows con PowerShell, ejecutando las órdenes
 
-        mingw32-make
+        make
         chcp 65001
         ./calculadora
 
 3. En Windows con con el símbolo del sistema (Windows 8 y anteriores), ejecutando las órdenes
 
-        mingw32-make
+        make
         calculadora.exe
 
 El repositorio también está configurado con tres tareas para su utilización en **Visual Studio Code**:
