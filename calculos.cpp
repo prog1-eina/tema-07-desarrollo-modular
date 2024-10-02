@@ -15,7 +15,7 @@
  */
 unsigned numCifras(int n) {
     unsigned cuenta = 1;      // lleva la cuenta de las cifras identificadas
-    n = n / 10;                   // elimina la cifra menos significativa de «n»
+    n = n / 10;               // elimina la cifra menos significativa de «n»
     while (n != 0) {
         // El valor de <cuenta> es igual al de cifras identificadas en «n»
         cuenta++;       // contabiliza la cifra menos significativa de «n»
@@ -34,7 +34,7 @@ unsigned sumaCifras(int n) {
     if (n < 0) {
         n = -n;                    // si «n» es negativo, le cambia el signo
     }
-    unsigned suma = 0;         // suma de las cifras eliminadas de «n»
+    unsigned suma = 0;             // suma de las cifras eliminadas de «n»
     while (n != 0) {
         suma = suma + n % 10;      // suma la cifra menos significativa de «n»
         n = n / 10;                // y la elimina de «n»
