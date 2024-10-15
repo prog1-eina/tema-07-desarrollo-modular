@@ -23,7 +23,8 @@
             "label": "Ejecutar proyecto «calculadora»",
             "command": "./calculadora",
             "windows": {
-                "command": "chcp 65001 ; .\\calculadora.exe"
+                "command": "cmd",
+                "args": ["/c", "chcp 65001 && .\\calculadora.exe"]
             },
             "dependsOn": "Compilar proyecto «calculadora»",
             "problemMatcher": []
