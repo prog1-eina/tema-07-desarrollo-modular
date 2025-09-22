@@ -1,10 +1,11 @@
-﻿/*********************************************************************************************\
+﻿/******************************************************************************
  * Curso de Programación 1. Tema 7 y práctica 3
  * Autores: Miguel Ángel Latre y Javier Martínez
  * Última revisión: 8-10-2024
- * Resumen: Fichero «calculos.hpp» de interfaz del módulo de biblioteca «calculos» que facilita
- *          algunas funciones para trabajar con datos de tipo entero
-\*********************************************************************************************/
+ * Resumen: Fichero «calculos.hpp» de interfaz del módulo de biblioteca
+ *          «calculos» que facilita algunas funciones para trabajar con datos
+ *          de tipo entero
+ *****************************************************************************/
 
 /*
  * Pre:  ---
@@ -15,23 +16,24 @@ unsigned numCifras(int n);
 
 /*
  * Pre:  ---
- * Post: Devuelve la suma de las cifras de «n» cuando «n» se escribe en base 10.
+ * Post: Devuelve la suma de las cifras de «n» cuando «n» se escribe en
+ *       base 10.
  */
 unsigned sumaCifras(int n);
 
 
 /*
  *  Pre:  i ≥ 1
- *  Post: Devuelve la «i»-ésima cifra menos significativa de «n» cuando «n» se escribe
- *        en base 10.
+ *  Post: Devuelve la «i»-ésima cifra menos significativa de «n» cuando «n» se
+ *        escribe en base 10.
  */
 unsigned cifra(int n, unsigned i);
 
 
 /*
  *  Pre:  ---
- *  Post: Devuelve el número que escrito en base 10 es la imagen especular de «n» cuando «n» se
- *        escribe también en base 10.
+ *  Post: Devuelve el número que, escrito en base 10, es la imagen especular
+ *        de «n» cuando «n» se escribe también en base 10.
  */
 int imagen(int n);
 

@@ -1,11 +1,13 @@
-﻿/*********************************************************************************************\
+﻿/******************************************************************************
  * Curso de Programación 1. Tema 7 y práctica 3
  * Autores: Miguel Ángel Latre y Javier Martínez
  * Última revisión: 8-10-2024
- * Resumen: Módulo principal de un programa interactivo dirigido por menú que permite al
- *          usuario la realización de algunos cálculos con datos de tipo entero
- * Nota: Leer el fichero README.md, que contiene instrucciones para su compilación y ejecución.
-\*********************************************************************************************/
+ * Resumen: Módulo principal de un programa interactivo dirigido por menú que
+ *          permite al usuario la realización de algunos cálculos con datos de
+ *          tipo entero.
+ * Nota: Leer el fichero README.md, que contiene instrucciones para su
+ *       compilación y ejecución.
+ *****************************************************************************/
 #include <iostream>
 #include "calculos.hpp"
 using namespace std;
@@ -17,8 +19,8 @@ const unsigned NUM_OPERACIONES = 5;
 
 
 /*
- *  Pre:  ---
- *  Post: Presenta en la pantalla el menú de opciones disponibles.
+ * Pre:  ---
+ * Post: Presenta en la pantalla el menú de opciones disponibles.
  */
 void presentarMenu() {
     cout << endl;
@@ -35,10 +37,10 @@ void presentarMenu() {
 
 
 /*
- *  Pre:  ---
- *  Post: Presenta en la pantalla el menú de opciones disponibles, solicita al usuario que
- *        escriba el código de una de ellas y asigna a «operacion» la nueva respuesta del
- *        usuario.
+ * Pre:  ---
+ * Post: Muestra el menú de opciones disponibles, solicita al usuario que
+ *       escriba el código de una de ellas y asigna a «operacion» la respuesta
+ *       del usuario.
  */
 void pedirOrden(unsigned &operacion) {
     presentarMenu();
@@ -52,7 +54,8 @@ void pedirOrden(unsigned &operacion) {
  * Post: Ejecuta la 1ª orden, informando del número de cifras de «numero».
  */
 void ejecutarNumCifras(int numero) {
-    cout << "El número " << numero << " tiene " << numCifras(numero) << " cifras." << endl;
+    cout << "El número " << numero << " tiene " << numCifras(numero) 
+         << " cifras." << endl;
 }
 
 
@@ -62,24 +65,27 @@ void ejecutarNumCifras(int numero) {
  *       «numero».
  */
 void ejecutarSumaCifras(int numero) {
-    cout << "Las cifras de " << numero << " suman " << sumaCifras(numero) << "." << endl;
+    cout << "Las cifras de " << numero << " suman " << sumaCifras(numero)
+         << "." << endl;
 }
 
 
 /*
  * Pre:  ---
- * Post: Ejecuta la 3ª orden, informando del valor de la cifra de «numero» ubicada en la
- *       posición especificada por el usuario.
+ * Post: Ejecuta la 3ª orden, informando del valor de la cifra de «numero»
+ *       ubicada en la posición especificada por el usuario.
  */
 void ejecutarExtraerCifra(int numero) {
-    // El usuario debe definir la posición de la cifra de «numero» en la que está interesado.
+    // El usuario debe definir la posición de la cifra de «numero» en la que
+    // está interesado.
     cout << "Seleccione la posición de una cifra: ";
     int posicion;
     cin >> posicion;
 
     if (posicion >= 1) {
-        cout << "La cifra situada en la posición " << posicion << " del número " << numero
-             << " es " << cifra(numero, posicion) << "." << endl;
+        cout << "La cifra situada en la posición " << posicion
+             << " del número " << numero << " es "
+             << cifra(numero, posicion) << "." << endl;
     } else {
         cout << "La posición tiene que ser mayor que 0." << endl;
     }
@@ -88,17 +94,19 @@ void ejecutarExtraerCifra(int numero) {
 
 /*
  * Pre:  ---
- * Post: Ejecuta la 4ª orden, informando del valor de la imagen especular de «numero».
+ * Post: Ejecuta la 4ª orden, informando del valor de la imagen especular de
+ *       «numero».
  */
 void ejecutarImagenEspecular(int numero) {
-    cout << "El número imagen especular de " << numero << " es el " << imagen(numero) << "."
-         << endl;
+    cout << "El número imagen especular de " << numero << " es el "
+         << imagen(numero) << "." << endl;
 }
 
 
 /*
  * Pre:  ---
- * Post: Ejecuta la 5ª orden, informando sobre si «numero» es un número primo o no lo es.
+ * Post: Ejecuta la 5ª orden, informando sobre si «numero» es un número primo
+ *       o no lo es.
  */
 void ejecutarEsPrimo(int numero) {
     cout << "El número " << numero;
@@ -110,10 +118,11 @@ void ejecutarEsPrimo(int numero) {
 
 
 /*
- *  Pre:  ---
- *  Post: Ejecuta las acciones asociadas a la orden cuyo código es igual al valor del parámetro
- *        «operacion». Si «operacion» no se corresponde con ninguna de las operaciones, escribe
- *        en la pantalla un mensaje de error.
+ * Pre:  ---
+ * Post: Ejecuta las acciones asociadas a la orden cuyo código es igual al
+ *       valor del parámetro «operacion». Si «operacion» no se corresponde
+ *       con ninguna de las operaciones, escribe en pantalla un mensaje de
+ *       error.
  */
 void ejecutarOrden(unsigned operacion) {
     if (operacion >= 1 && operacion <= NUM_OPERACIONES) {
@@ -142,9 +151,9 @@ void ejecutarOrden(unsigned operacion) {
 
 
 /*
- * Programa que plantea al usuario de forma reiterada un menú con varias opciones. En cada
- * iteración, lee la respuesta del usuario y presenta los resultados de ejecutar la opción
- * elegida. Concluye cuando el usuario selecciona la opción «0».
+ * Programa que muestra reiteradamente un menú de opciones al usuario. En cada
+ * iteración, lee la respuesta del usuario y presenta el resultado de ejecutar
+ * la opción elegida. Finaliza cuando el usuario selecciona la opción «0».
  */
 int main() {
     unsigned operacion;

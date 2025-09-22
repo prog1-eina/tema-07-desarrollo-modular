@@ -1,10 +1,11 @@
-﻿/*********************************************************************************************\
+﻿/******************************************************************************
  * Curso de Programación 1. Tema 7 y práctica 3
  * Autores: Miguel Ángel Latre y Javier Martínez
  * Última revisión: 8-10-2024
- * Resumen: Fichero «calculos.cpp» de implementación del módulo de biblioteca «calculos» que
- *          facilita algunas funciones para trabajar con datos de tipo entero
-\*********************************************************************************************/
+ * Resumen: Fichero «calculos.cpp» de implementación del módulo de biblioteca
+ *          «calculos» que facilita algunas funciones para trabajar con datos
+ *          de tipo entero
+ *****************************************************************************/
 #include "calculos.hpp"
 
 /*
@@ -38,7 +39,8 @@ unsigned absoluto(int a) {
 
 /*
  * Pre:  ---
- * Post: Devuelve la suma de las cifras de «n» cuando «n» se escribe en base 10.
+ * Post: Devuelve la suma de las cifras de «n» cuando «n» se escribe en
+ *       base 10.
  */
 unsigned sumaCifras(int n) {
     n = absoluto(n);               // si «n» es negativo, le cambia el signo
@@ -53,8 +55,8 @@ unsigned sumaCifras(int n) {
 
 /*
  *  Pre:  i ≥ 1
- *  Post: Devuelve la «i»-ésima cifra menos significativa de «n» cuando «n» se escribe
- *        en base 10.
+ *  Post: Devuelve la «i»-ésima cifra menos significativa de «n» cuando «n» se
+ *        escribe en base 10.
  */
 unsigned cifra(int n, unsigned i) {
     n = absoluto(n);               // si «n» es negativo, le cambia el signo
@@ -67,8 +69,8 @@ unsigned cifra(int n, unsigned i) {
 
 /*
  *  Pre:  ---
- *  Post: Devuelve el número que escrito en base 10 es la imagen especular de «n» cuando «n»
- *        se escribe también en base 10.
+ *  Post: Devuelve el número que, escrito en base 10, es la imagen especular
+ *        de «n» cuando «n» se escribe también en base 10.
  */
 int imagen(int n) {
     // «negativo» memoriza si «n» es, inicialmente, positivo o negativo.
@@ -78,14 +80,15 @@ int imagen(int n) {
     // Variable para el cálculo de la imagen especular de «n»
     int resultado = 0;
     while (n != 0) {
-        // Incorpora el dígito menos significativo de «n» a la variable «resultado»
+        // Incorpora el dígito menos significativo de «n» a la variable
+        // «resultado»
         resultado = 10 * resultado + n % 10;
         // Y lo elimina de «n»
         n = n / 10;
     }
     
-    // Se devuelve el valor «resultado» con el signo que tenía «n» al la ejecución de esta
-    // función.
+    // Devuelve el valor «resultado» con el signo original de «n» antes de la
+    // ejecución de esta función.
     if (negativo) {
         return -resultado;
     } else {
