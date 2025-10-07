@@ -60,7 +60,7 @@ unsigned sumaCifras(int n) {
  */
 unsigned cifra(int n, unsigned i) {
     n = absoluto(n);               // si «n» es negativo, le cambia el signo
-    for (int exp = 1; exp < i; exp++) {
+    for (unsigned exp = 1; exp < i; exp++) {
         n = n / 10;         // elimina la cifra menos significativa de «n»
     }
     return n % 10;
